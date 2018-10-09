@@ -178,68 +178,12 @@
 % Capa
 % ---
 \imprimircapa
-% ---
-
-% ---
-% Folha de rosto
-% ---
 \imprimirfolhaderosto
-% ---
 
-% ---
-% NOTA DA ABNT NBR 15287:2011, p. 4:
-%  ``Se exigido pela entidade, apresentar os dados curriculares do autor em
-%     folha ou página distinta após a folha de rosto.''
-% ---
-
-% ---
-% inserir lista de ilustrações
-% ---
-% \pdfbookmark[0]{\listfigurename}{lof}
-% \listoffigures*
-% \cleardoublepage
-% ---
-
-% ---
-% inserir lista de tabelas
-% ---
-% \pdfbookmark[0]{\listtablename}{lot}
-% \listoftables*
-% \cleardoublepage
-% ---
-
-% ---
-% inserir lista de abreviaturas e siglas
-% ---
-%\begin{siglas}
-%  \item[ABNT] Associação Brasileira de Normas Técnicas
-%  \item[abnTeX] ABsurdas Normas para TeX
-%\end{siglas}
-% ---
-
-% ---
-% inserir lista de símbolos
-% ---
-%\begin{simbolos}
-%  \item[$ \Gamma $] Letra grega Gama
-%  \item[$ \Lambda $] Lambda
-%  \item[$ \zeta $] Letra grega minúscula zeta
-%  \item[$ \in $] Pertence
-%\end{simbolos}
-% ---
-
-% ---
-% inserir o sumario
-% ---
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
 % ---
-
-
-% ----------------------------------------------------------
-% ELEMENTOS TEXTUAIS
-% ----------------------------------------------------------
 \textual
 
 % ----------------------------------------------------------
@@ -247,81 +191,18 @@
 % ----------------------------------------------------------
 \include{justificativa}
 \include{objetivos}
-\include{conhecimento}
+%\include{conhecimento}
 \include{recursos}
-%\include{4-materiais}
 \include{equipe}
-
 \include{metas}
 \include{cronograma}
 \include{investimento}
 \include{risco}
 
-% ---
-% Finaliza a parte no bookmark do PDF
-% para que se inicie o bookmark na raiz
-% e adiciona espaço de parte no Sumário
-% ---
-\phantompart
 
-% ---
-% Conclusão
-% ---
-% ----------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% ----------------------------------------------------------
+\phantompart
 \postextual
-
-% ----------------------------------------------------------
-% Referências bibliográficas
-% ----------------------------------------------------------
-%\bibliography{refs/refs.bib}
-
-% ----------------------------------------------------------
-% Glossário
-% ----------------------------------------------------------
-%
-% Consulte o manual da classe abntex2 para orientações sobre o glossário.
-%
-%\glossary
-
-% ----------------------------------------------------------
-% Apêndices
-% ----------------------------------------------------------
-
-% ---
-% Inicia os apêndices
-% ---
-%\begin{apendicesenv}
-
-% Imprime uma página indicando o início dos apêndices
-%\partapendices
-
-
-%\end{apendicesenv}
-% ---
-
-
-% ----------------------------------------------------------
-% Anexos
-% ----------------------------------------------------------
-
-% ---
-% Inicia os anexos
-% ---
-%\begin{anexosenv}
-
-% Imprime uma página indicando o início dos anexos
-%\partanexos
-
-%\end{anexosenv}
-
-%---------------------------------------------------------------------
-% INDICE REMISSIVO
-%---------------------------------------------------------------------
-
 \phantompart
-
 \printindex
 
 \end{document}
