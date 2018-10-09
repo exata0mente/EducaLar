@@ -21,7 +21,7 @@ Para verificar como está ficando o https://pt.overleaf.com/read/kjypxnspvxqx
 
 ## ToDoList
 
-- [] Escopo
+- [] Escopo - 15/10/2018
     - [] Prototipação
     - [] Plano de Ação
     - [] Controle de Versões
